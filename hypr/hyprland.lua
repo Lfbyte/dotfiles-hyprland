@@ -199,7 +199,7 @@ hl.animation({ leaf = "zoomFactor",    enabled = true,  speed = 7,    bezier = "
 -- See https://wiki.hypr.land/configuring/layouts/dwindle-layout/ for more
 hl.config({
     dwindle = {
-        preserve_split = false, -- You probably want this
+        preserve_split = true, -- You probably want this
 		force_split = 2
     },
 })
