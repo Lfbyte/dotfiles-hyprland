@@ -1,0 +1,73 @@
+{
+    "layer": "bottom",
+    "position": "bottom",
+    "height": 20,
+    "modules-left": ["hyprland/workspaces"],
+    "modules-center": [],
+    "modules-right": ["pulseaudio","network#wifi","network#eth","disk#root","disk#world",/*"cpu"*/ "memory","clock","tray"],
+	
+	"hyprland/workspaces": {
+		"format":"{icon}",
+		"tooltip": false,
+		 "enable-bar-scroll": true,
+		 "format-icons":{}
+	},
+	"network#wifi":{
+		"interface":"wl*",
+		"format":"",
+		"format-wifi":"  W: {ipaddr} \uf1eb |",
+		"format-disconnected":"",
+		"tooltip":false
+	},
+	"network#eth":{
+
+		"interface":"en*",
+		"format":"",
+		"format-ethernet":"  E: {ipaddr}  \u0047",
+		"format-disconnected":"",
+		"tooltip":false,
+	
+	},
+    /*"cpu": {
+        "format": "|  CPU {usage}% |",
+		"tooltip": false
+    },*/
+    "memory": {
+		"interval":1,
+        "format": "|  💾 {used:0.1f}  GiB  |",
+		"tooltip":false,
+		"justify":"center"
+    },
+    "clock": {
+        "format": "{:L%a,  %d-%m-%Y  %H:%m}",
+		"tooltip": false,
+		"locale": "pt_BR.UTF-8",
+		"timezones": ["America/Sao_Paulo"]
+    },
+	"tray": {
+		"icon-size":21,
+		"spacing":10,
+		"icons":{
+		  "blueman":"bluetooth"
+		}
+	},
+	"pulseaudio": {
+		"format": "♪ {volume}% |",
+		"scroll-step": 5,
+		"on-click":"pavucontrol"
+	},
+
+	"disk#root":{
+		"format":" |  / {free:=1}",
+		"path": "/",
+		"tooltip":false
+	},
+
+	"disk#world":{
+		"format":" |  💽 {free:=1}",
+		"path": "/worldluiz",
+		"tooltip":false
+	}
+
+
+}
