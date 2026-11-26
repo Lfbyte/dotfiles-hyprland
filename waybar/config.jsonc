@@ -61,13 +61,13 @@
 	},
 
 	"disk#root":{
-		"format":" |  / {free:G} GiB",
+		"format":" |  / {free:G} GiB ",
 		"paths": ["/"],
 		"tooltip":false
 	},
 
 	"disk#world":{
-		"format":" |  💽 {free:=1}",
+		"format":" |  💽 {free:G} GiB",
 		"paths": ["/worldluiz"],
 		"tooltip":false
 	}
