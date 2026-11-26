@@ -27,7 +27,7 @@
 
 		"interface":"en*",
 		"format":"",
-		"format-ethernet":"  E: {ipaddr}  \u0047",
+		"format-ethernet":"  E: {ipaddr} ",
 		"format-disconnected":"",
 		"tooltip":false	
 	},
