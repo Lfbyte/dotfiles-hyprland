@@ -1,7 +1,7 @@
 {
     "layer": "bottom",
     "position": "bottom",
-    "height": 20,
+    "height": 26,
     "modules-left": ["hyprland/workspaces"],
     "modules-center": [],
     "modules-right": ["pulseaudio","network#wifi","network#eth","disk#root","disk#world","memory","clock","tray"],
@@ -61,14 +61,14 @@
 	},
 
 	"disk#root":{
-		"format":" |  / {free:=1}",
-		"path": "/",
+		"format":" |  / {free:G} GiB",
+		"paths": ["/"],
 		"tooltip":false
 	},
 
 	"disk#world":{
 		"format":" |  💽 {free:=1}",
-		"path": "/worldluiz",
+		"paths": ["/worldluiz"],
 		"tooltip":false
 	}
 
