@@ -11,21 +11,20 @@
 }
 
 window#waybar {
-    /*background: #2e3440;*/
-	background: black;
-    color: #eceff4;
+	background: #000000;
+    color: #9da19e; /*cor dos textos*/
 }
 
 
 #workspaces button {
     padding: 0 8px;
-    color: #222;
-	border: 2px solid #222;
+    color: #222222;
+	border: 2px solid #222222;
 }
 
 #workspaces button.active {
     color: #ffffff;
-    border: 2px solid #fff;
+    border: 2px solid #ffffff;
 	background:none;
 }
 
@@ -39,6 +38,13 @@ window#waybar {
 }
 
 #cpu, #memory, #clock {
-    padding: 0 8px;
-    color: #d8dee9;
+    padding: 0 4px;
+}
+
+#workspaces button.urgent {
+	
+	background:#520f12; /*vermelho do urgente*/
+	color: #ffffff;
+
+
 }
