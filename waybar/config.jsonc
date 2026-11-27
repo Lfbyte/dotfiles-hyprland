@@ -40,10 +40,10 @@
     },
     
 	"clock": {
-        "format": "{:L%a,  %d-%m-%Y  %H:%m}",
+        "format": "{:L%a,  %d-%m-%Y  %H:%M}",
 		"tooltip": false,
 		"locale": "pt_BR.UTF-8",
-		"timezones": ["America/Sao_Paulo"]
+		"timezone": "America/Sao_Paulo"
     },
 	
 	"tray": {
